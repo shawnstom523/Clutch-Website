@@ -1,0 +1,168 @@
+/**SHOP CSS Updates**/
+
+.ast-main-header-bar-alignment {
+    display: none;
+}
+
+.pb-5 {
+    padding-bottom: 5rem !important; 
+}
+
+.woocommerce-page .navbar {
+    background: #2f1d57;
+}
+
+.woocommerce .site-content {
+    padding-top: 95px;
+    color: black;
+}
+
+.woocommerce-page .site-content {
+    padding-top: 10rem;
+    color: black;
+}
+
+.woocommerce-checkout .site-content {
+    padding-top: 13rem;
+}
+
+.woocommerce-page.woocommerce-checkout form #customer_details.col2-set .col-1 {
+    max-width: unset;
+}
+
+.woocommerce-checkout .form-row, .woocommerce-MyAccount-content .form-row, .woocommerce-account .form-row {
+    flex-direction: column;
+}
+
+.woocommerce-account .woocommerce {
+    padding: 0 5rem;
+    max-width: 90vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.woocommerce-MyAccount-content form .form-row-wide, .woocommerce-page form .form-row-wide {
+    flex-direction: column;
+    width: 47%;
+}
+
+.woocommerce-page .woocommerce-form-login .form-row, .woocommerce-checkout form .form-row-wide {
+    width: 100%;
+}
+
+.woocommerce-cart-form button.button[name="update_cart"]:disabled {
+    color: white;
+}
+
+.woocommerce-MyAccount-content form .form-row-last, .woocommerce-page form .form-row-last {
+    float: unset;
+    left: 1rem;
+    position: relative;
+}
+
+.woocommerce-MyAccount-content .col2-set .col-1, .woocommerce-page .col2-set .col-1, .woocommerce-MyAccount-content .col2-set .col-2, .woocommerce-page .col2-set .col-2 {
+    max-width: unset;
+}
+
+.shop-icons {
+    display: none;
+}
+
+.woocommerce-page .shop-icons {
+    display: block;
+}
+
+.shop-icons svg {
+    fill: white;
+    width: 25px;
+    height: 25px;
+}
+
+.shop-icons a {
+    position: relative;
+    display: inline-block;
+    margin: 0 .25rem;
+}
+
+.shop-icons a + a {
+    margin-right: .5rem;
+}
+
+.shop-icons .notification {
+    position: absolute;
+    display: inline-block;
+    top: -0.5rem;
+    left: 1rem;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #f16148;
+}
+.shop-icons a .notification span,
+.shop-icons a:hover .notification span {
+    color: white;
+}
+
+.notification span {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -.325rem;
+}
+
+.woocommerce span.onsale, .woocommerce a.button, .woocommerce a.button.alt, .woocommerce button.button, .woocommerce button.button.alt, .woocommerce #respond input#submit,
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active:before, .woocommerce .woocommerce-message a.button,
+.woocommerce nav.woocommerce-pagination ul li span.current, .woocommerce nav.woocommerce-pagination ul li a:hover,
+.woocommerce nav.woocommerce-pagination ul li a:focus {
+    background: #2f1d57;
+}
+
+.woocommerce button.button[name="login"] {
+    width: 25ch;
+}
+
+.woocommerce-info::before {
+    color: #2f1d2f;
+}
+
+.woocommerce-info, .woocommerce nav.woocommerce-pagination ul li {
+    border-color: #2f1d2f;
+}
+
+.woocommerce .star-rating::before, .woocommerce p.stars a::before {
+    color: #f16148;
+}
+
+.select2-container--default .select2-results>.select2-results__options {
+    color: black;
+}
+
+.form-row.form-row-wide.wc-square-credit-card-card-number-parent.wc-square-credit-card-hosted-field-parent {
+    width: 97.5%;
+}
+
+@media (max-width: 990px) {
+    .woocommerce-account .woocommerce {
+        padding: 0 1rem;
+    }
+
+    .woocommerce-MyAccount-content form .form-row-wide, .woocommerce-page form .form-row-wide {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .woocommerce-page .shop-icons {
+        display: none;
+    }
+
+    .woocommerce-page .mobile-only, .woocommerce-page .mobile-only .shop-icons {
+        display: inline-block;
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%);
+    }
+}
+

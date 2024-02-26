@@ -1,0 +1,116 @@
+// Colors
+$clutch-purple-dark: #2f233b;
+$clutch-purple: #2f1d57;
+$clutch-orange: #f16148;
+$clutch-purple-light: #b2a2c0;
+$clutch-gray: #77727c;
+@font-face {
+    font-family: "tiempos-headline";
+    src: url("/wp-content/themes/clutch/fonts/TiemposHeadline-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "tiempos-headline";
+    src: url("/wp-content/themes/clutch/fonts/TiemposHeadline-Light.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+}
+@mixin header-font {
+    font-family: 'tiempos-headline', serif;
+}
+@mixin body-font {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    @include header-font;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 55px;
+    line-height: 5rem;
+    @include respond-below(lg) {
+        font-size: 45px;
+        line-height: 3rem;
+    }
+    @include respond-below(xxs) {
+        font-size: 35px;
+        line-height: 3rem;
+    }
+}
+
+h2 {
+    @include header-font;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 38px;
+    color: $clutch-purple-dark;
+    @include respond-below(md) {
+        font-size: 30px;
+    }
+
+    span {
+        color: $clutch-orange;
+    }
+}
+
+h3 {
+    @include body-font;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    color: $clutch-gray;
+    letter-spacing: 0.10rem;
+    line-height: 2.5rem;
+    @include respond-below(md) {
+        font-size: 18px;
+    }
+
+    span {
+        color: $clutch-orange;
+    }
+}
+
+h4 {
+    @include body-font;
+    font-size: 17px;
+    color: #535057;
+    font-weight: 600;
+    font-style: normal;
+}
+
+p {
+    @include body-font;
+    font-size: 16px;
+    line-height: 2.2rem;
+    font-style: normal;
+    font-weight: 400;
+    color: #535057;
+}
+
+.sub-text {
+    font-family: 'sweet-sans-pro', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: $clutch-purple-light;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    @include respond-below(md) {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+.sub-text-2 {
+    font-family: sweet-sans-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: $clutch-purple-light;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    @include respond-below(md) {
+        text-align: center;
+    }
+}
